@@ -8,6 +8,9 @@ fi
 chown 999:999 /usr/local/lsws/conf -R
 chown 999:1000 /usr/local/lsws/admin/conf -R
 
+rm /usr/local/lsws/lsphp82/etc/php/8.2/litespeed/php.ini
+cp /php.ini /usr/local/lsws/lsphp82/etc/php/8.2/litespeed/
+
 /usr/local/lsws/bin/lswsctrl start
 /wordpress.sh
 
